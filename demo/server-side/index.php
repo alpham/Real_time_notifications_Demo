@@ -11,7 +11,7 @@ $elephant->send(
     ElephantIOClient::TYPE_EVENT,
     null,
     null,
-    json_encode(array('name' => 'action', 'args' => "{text: 'notification from page2.php' }"))
+    json_encode(array('name' => 'action', 'args' => "{text: 'notification from index.php' }"))
 );
 $elephant->close();
 ?>
