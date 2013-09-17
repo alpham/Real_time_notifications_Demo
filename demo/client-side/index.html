@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>notification page</title>
+		
+		<script type='text/javascript' src='bower_components/jquery/jquery.min.js'></script>
+		<script type='text/javascript' src='bower_components/toastr/toastr.min.js'></script>
+		
+		<script type='text/javascript' src='http://localhost:8000/socket.io/socket.io.js'></script>
+		<script type='text/javascript'>
+			var socket = io.connect('http://localhost:8000');
+        		socket.on('to_client', function (data) {
+            		var _data = eval('(' + data + ')');
+            		toastr.options = {
+                		"closeButton": false,
+                		"debug": false,
+                		"positionClass": "toast-top-right",
+                		"onclick": null,
+                		"showDuration": "300",
+                		"hideDuration": "1000",
+                		"timeOut": "5000",
+                		"extendedTimeOut": "1000",
+                		"showEasing": "swing",
+                		"hideEasing": "linear",
+                		"showMethod": "fadeIn",
+                		"hideMethod": "fadeOut"
+            		}
+            		toastr.success(_data.text);
+        		});
+		</script>
+	        <link rel="stylesheet" type="text/css" href="bower_components/toastr/toastr.min.css">
+
+
+
+	</head>
+	<body>
+		normal page where the notifications should appear 
+	</body>
+</html>

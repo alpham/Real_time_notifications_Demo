@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/home/ahmed/local/bin/npm', 'install', 'toastr' ]
+2 info using npm@1.3.4
+3 info using node@v0.10.13
+4 verbose cache add [ 'toastr', null ]
+5 verbose cache add name=undefined spec="toastr" args=["toastr",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'toastr',
+6 verbose parsed url   path: 'toastr',
+6 verbose parsed url   href: 'toastr' }
+7 silly lockFile e190861d-toastr toastr
+8 verbose lock toastr /home/ahmed/.npm/e190861d-toastr.lock
+9 silly lockFile e190861d-toastr toastr
+10 silly lockFile e190861d-toastr toastr
+11 verbose addNamed [ 'toastr', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 24dc0f13-toastr toastr@
+14 verbose lock toastr@ /home/ahmed/.npm/24dc0f13-toastr.lock
+15 silly addNameRange { name: 'toastr', range: '*', hasData: false }
+16 verbose url raw toastr
+17 verbose url resolving [ 'https://registry.npmjs.org/', './toastr' ]
+18 verbose url resolved https://registry.npmjs.org/toastr
+19 info trying registry request attempt 1 at 11:08:41
+20 http GET https://registry.npmjs.org/toastr
+21 http 404 https://registry.npmjs.org/toastr
+22 silly registry.get cb [ 404,
+22 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+22 silly registry.get     date: 'Tue, 17 Sep 2013 09:08:43 GMT',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'cache-control': 'must-revalidate' } ]
+23 silly lockFile 24dc0f13-toastr toastr@
+24 silly lockFile 24dc0f13-toastr toastr@
+25 error 404 'toastr' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Linux 3.10.11-100.fc18.x86_64
+27 error command "node" "/home/ahmed/local/bin/npm" "install" "toastr"
+28 error cwd /var/www/html/ahmed/demo/client-side
+29 error node -v v0.10.13
+30 error npm -v 1.3.4
+31 error code E404
+32 verbose exit [ 1, true ]

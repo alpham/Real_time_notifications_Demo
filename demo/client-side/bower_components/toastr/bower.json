@@ -1,0 +1,19 @@
+{
+  "name": "toastr",
+  "version": "2.0.1",
+  "main": [
+    "toastr.js",
+    "toastr.css"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6.3"
+  },
+  "gitHead": "f464d76723e466128ce0f486b7ce37ad373164ed",
+  "_id": "toastr@2.0.1",
+  "readme": "ERROR: No README.md file found!",
+  "description": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johnpapa/toastr-bower.git"
+  }
+}
